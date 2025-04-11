@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class GroundSensor : MonoBehaviour
 {
-   public bool IsGrounded;
-   BoxCollider2D _groundSensor;
-
-
-    void Start()
+    private Rigidbody2D _rigidBody;
+    private NewBehaviourScript playerScript;
+ 
+void Awake()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        _rigidBody = GetComponentInParent<Rigidbody2D>();
+        playerScript = GetComponentInParent<NewBehaviourScript>();
     }
 
 

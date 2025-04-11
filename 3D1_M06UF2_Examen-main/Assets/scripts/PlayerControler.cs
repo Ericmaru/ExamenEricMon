@@ -31,10 +31,6 @@ public class NewBehaviourScript : MonoBehaviour
    
     void Update()
     {
-     _rigidBody.velocity = new Vector2(inputHorizontal * playerSpeed, _rigidBody.velocity.y);
-
-
-
      Movement();
     }
 
@@ -58,12 +54,9 @@ public class NewBehaviourScript : MonoBehaviour
 }
 
     void Jump()
-    {
-        if (Input.GetButtonDown("Jump"))
-        {
-            _rigidBody.AddForce(new Vector2(10.0f, JumpForce));
-        }
-    }
+  {
+  _rigidBody.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+  }
 
 }
 
