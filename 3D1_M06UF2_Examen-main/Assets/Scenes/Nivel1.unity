@@ -8319,7 +8319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fcc46e59a6bd842bbec8532db27dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsGrounded: 0
 --- !u!61 &996990889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19162,7 +19161,7 @@ GameObject:
   - component: {fileID: 2100553427}
   - component: {fileID: 2100553431}
   - component: {fileID: 2100553430}
-  - component: {fileID: 2100553429}
+  - component: {fileID: 2100553432}
   m_Layer: 0
   m_Name: Mario_0
   m_TagString: Player
@@ -19238,20 +19237,6 @@ Transform:
   - {fileID: 996990887}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2100553429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100553426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e036068b88d282d4b88cf702462771e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 5
-  JumpForce: 10
 --- !u!50 &2100553430
 Rigidbody2D:
   serializedVersion: 4
@@ -19324,6 +19309,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &2100553432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100553426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e036068b88d282d4b88cf702462771e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 5
+  JumpForce: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
